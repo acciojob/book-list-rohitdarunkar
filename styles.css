@@ -1,46 +1,47 @@
-/*  your css code here. If applicable */
 body {
   font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+h1 {
   text-align: center;
 }
 
-.container {
-  margin-top: 40px;
-}
-
-input {
-  display: block;
-  margin: 10px auto;
-  padding: 6px;
-}
-
-button {
-  padding: 8px 16px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.message {
-  font-size: 18px;
-  margin: 15px;
-  font-weight: bold;
-}
-
-.board {
-  width: 300px;
+.form-group {
+  max-width: 500px;
   margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
 }
 
-.cell {
-  width: 100px;
-  height: 100px;
-  background-color: pink;
-  font-size: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding: 8px 16px;
   cursor: pointer;
+}
+
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-striped tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
 }
